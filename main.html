@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body class="bg-slate-800">
+    <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200">
+        <header>
+            <nav class="flex justify-around items-center">
+                <img class="w-16" src="Payoo-MFS-Resources/assets/Group.png" alt="">
+                <div class=" text-center">
+                    <h1 class="text-3xl font-bold">$ <span id="main-balance ">4500</span></h1>
+                    <p class="border rounded p-1">Avaiable balance</p>
+                </div>
+                <button class="text-white font-bold px-5 py-3 bg-blue-600 log-btn">log out</button>
+            </nav>
+            <section class="mt-10">
+                <h1 class="text-2xl font-bold mb-2">welcome to payoo!</h1>
+                <p>Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+
+                <!-- Card part -->
+                <div class="cards grid grid-cols-3 mt-14 gap-2 p-4">
+                    <div class="box cursor-pointer border p-4 text-center rounded-sm ">
+                        <img class="w-8 mx-auto" src="Payoo-MFS-Resources/assets/wallet1.png" alt="">
+                        <h3>Add money</h3>
+                    </div>
+                    <div class="box border p-4 text-center rounded-sm ">
+                        <img class="w-8 mx-auto" src="Payoo-MFS-Resources/assets/wallet1.png" alt="">
+                        <h3>Cashout</h3>
+                    </div>
+                    <div class="box border p-4 text-center rounded-sm ">
+                        <img class="w-8 mx-auto" src="Payoo-MFS-Resources/assets/send1.png" alt="">
+                        <h3>transfer money</h3>
+                    </div>
+                    <div class="box border p-4 text-center rounded-sm ">
+                        <img class="w-8 mx-auto" src="Payoo-MFS-Resources/assets/purse1.png" alt="">
+                        <h3>get bonus</h3>
+                    </div>
+                    <div class="box border p-4 text-center rounded-sm ">
+                        <img class="w-8 mx-auto" src="Payoo-MFS-Resources/assets/bonus1.png" alt="">
+                        <h3>transiction</h3>
+                    </div>
+                    <div class="box border p-4 text-center rounded-sm ">
+                        <img class="w-8 mx-auto" src="Payoo-MFS-Resources/assets/transaction1.png" alt="">
+                        <h3>Add money</h3>
+                    </div>
+                   
+
+                </div>
+            </section>
+
+
+        </header>
+        <main>
+            <!-- add money section -->
+             <section class="">
+                <h2 class="text-center font-bold text-xl">Add money</h2>
+                <!-- from part from daisy -->
+                <div class="">
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                      <div class="card  w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                            <select class="select select-bordered w-full max-w-xs">
+                                <option disabled selected>Select bank</option>
+                                <option value="Bikash">Bikash</option>
+                                <option value="Nagod">Nagod</option>
+                                <option value="Rocket">Rocket</option>
+                              </select>
+                              <fieldset class="fieldset">
+                                <!-- Account number -->
+                                <label class="fieldset-label">Account Number</label>
+                                <input value="01912903947" id="acc-number" type="number" class="input" placeholder="Your Account Number" required/>
+                                <!-- amount -->
+                                <label class="fieldset-label">Amount</label>
+                                <input value="" id="amount" type="number" class="input" placeholder="Type Amount" required/>
+                                <!-- password -->
+                                <label class="fieldset-label">Password</label>
+                                <input value="1234" id="pin" type="text" class="input" placeholder="Your Pin number" required />
+                                <div><a class="link link-hover">Forgot password?</a></div>
+                                <!-- Button  -->
+                                <button id="Add-money" type="submit" class="btn btn-neutral bg-blue-700 mt-4 ">Add money</button>
+                              </fieldset>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+             </section>
+
+             
+        </main>
+
+    </section>
+    <script src="script/addmonoy.js"></script>
+
+</body>
+</html>
