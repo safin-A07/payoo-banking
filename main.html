@@ -14,7 +14,7 @@
             <nav class="flex justify-around items-center">
                 <img class="w-16" src="Payoo-MFS-Resources/assets/Group.png" alt="">
                 <div class=" text-center">
-                    <h1 class="text-3xl font-bold">$ <span id="main-balance ">4500</span></h1>
+                    <h1 class="text-3xl font-bold">$ <span id="main-balance">4500</span></h1>
                     <p class="border rounded p-1">Avaiable balance</p>
                 </div>
                 <button class="text-white font-bold px-5 py-3 bg-blue-600 log-btn">log out</button>
@@ -25,11 +25,11 @@
 
                 <!-- Card part -->
                 <div class="cards grid grid-cols-3 mt-14 gap-2 p-4">
-                    <div class="box cursor-pointer border p-4 text-center rounded-sm ">
+                    <div id="add-money-box" class="box cursor-pointer border p-4 text-center rounded-sm ">
                         <img class="w-8 mx-auto" src="Payoo-MFS-Resources/assets/wallet1.png" alt="">
                         <h3>Add money</h3>
                     </div>
-                    <div class="box border p-4 text-center rounded-sm ">
+                    <div id="cashout-box" class="box cursor-pointer border p-4 text-center rounded-sm ">
                         <img class="w-8 mx-auto" src="Payoo-MFS-Resources/assets/wallet1.png" alt="">
                         <h3>Cashout</h3>
                     </div>
@@ -58,7 +58,7 @@
         </header>
         <main>
             <!-- add money section -->
-             <section class="">
+             <section id="addMoney" class="">
                 <h2 class="text-center font-bold text-xl">Add money</h2>
                 <!-- from part from daisy -->
                 <div class="">
@@ -95,11 +95,32 @@
 
              </section>
 
+             <!-- CashOut section and form of Cash out  -->
+              <section id="CashOut">
+                <fieldset class="fieldset">
+                    <!-- Account number -->
+                    <label class="fieldset-label">Account Number</label>
+                    <input value="01912903947" id="acc-number" type="number" class="input" placeholder="Your Account Number" required/>
+                    <!-- amount -->
+                    <label class="fieldset-label">Amount</label>
+                    <input value="" id="cashout-amount" type="number" class="input" placeholder="Type Amount" required/>
+                    <!-- password -->
+                    <label class="fieldset-label">Password</label>
+                    <input value="1234" id="cashout-pin" type="text" class="input" placeholder="Your Pin number" required />
+                    <div><a class="link link-hover">Forgot password?</a></div>
+                    <!-- Button  -->
+                    <button id="cashout-btn" type="submit" class="btn btn-neutral bg-blue-700 mt-4 ">Add money</button>
+                  </fieldset>
+
+              </section>
+
              
         </main>
 
     </section>
     <script src="script/addmonoy.js"></script>
+    <script src="./script/toggle.js"></script>
+    <script src="./script/cashout.js"></script>
 
 </body>
 </html>
